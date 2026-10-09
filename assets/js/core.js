@@ -37,7 +37,14 @@
   }
   async function copyDraft(text, clipboard) {
     if (!clipboard || typeof clipboard.writeText !== 'function') return false;
-    try { await clipboard.writeText(text); return true; } catch (_) { return false; }
+    let timer;
+    try {
+      return await Promise.race([
+        Promise.resolve(clipboard.writeText(text)).then(() => true, () => false),
+        new Promise(resolve => { timer = setTimeout(() => resolve(false), 1800); })
+      ]);
+    } catch (_) { return false; }
+    finally { clearTimeout(timer); }
   }
   root.MorobeCore = Object.freeze({ localDate, validDate, validGroup, estimate, kina, validateEnquiry, draft, copyDraft });
 })(typeof window !== 'undefined' ? window : globalThis);

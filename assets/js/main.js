@@ -88,6 +88,7 @@
       $('#copy-status').textContent = copied ? 'Enquiry copied. You can paste it into your chosen application.' : 'Automatic copying is unavailable. The draft is selected. Press Ctrl+C, or use your device’s Copy command.';
       if (!copied) { $('#draft-text').focus(); $('#draft-text').select(); }
     });
+    form.querySelector('button[type="submit"]').disabled = false;
   }
   if ($('#gallery-list')) {
     fetch('assets/images/attribution.json').then(response => { if (!response.ok) throw new Error('Credits unavailable'); return response.json(); }).then(images => {
