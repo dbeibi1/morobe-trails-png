@@ -1,12 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Explore the fictional tour concepts of Morobe Trails PNG, a Lae-based tourism company created for a Web Design project."><title>Explore tours | Morobe Trails PNG</title><link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/css/style.css"><script defer src="assets/js/tours.js"></script><script defer src="assets/js/core.js"></script><script defer src="assets/js/main.js"></script></head>
-<body><a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Morobe Trails PNG home"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M4 35 20 10l10 16 5-8 9 17" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="m16 35 8-12 8 12M8 41h32" stroke="currentColor" stroke-width="2.5"/><circle cx="37" cy="9" r="3" fill="currentColor"/></svg><span>MOROBE TRAILS<small>PAPUA NEW GUINEA</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Menu <span aria-hidden="true">☰</span></button><nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="tours.html" aria-current="page">Tours</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a class="button small nav-cta" href="contact.html">Plan your journey <span aria-hidden="true">↗</span></a></nav></div></header>
-<main id="main">
-<section class="page-intro container"><p class="eyebrow">FIND YOUR PATH</p><h1>Less rushing.<br>More <em>discovering.</em></h1><p class="lead">Six sample journeys through nature, culture, and coast. Choose a direction, compare the details, and make it your own.</p></section>
-<section class="container tour-section" aria-labelledby="tours-heading"><div class="tour-toolbar"><h2 id="tours-heading" class="sr-only">Sample tour packages</h2><div class="filter-buttons" role="group" aria-label="Filter tours by category"><button type="button" data-category="All" aria-pressed="true">All tours</button><button type="button" data-category="Nature" aria-pressed="false">Nature</button><button type="button" data-category="Culture" aria-pressed="false">Culture</button><button type="button" data-category="Coast" aria-pressed="false">Coast</button></div><div class="search-field"><label class="sr-only" for="tour-search">Search tours</label><input id="tour-search" type="search" placeholder="Search a tour" maxlength="100"></div></div><p id="tour-count" class="muted" role="status"></p><div id="tour-list" class="tour-grid"></div><p id="no-tours" class="empty-state" hidden>No tours match your search. Try another word or select All tours.</p><noscript><p>Enable JavaScript to display the tour packages, filter them, and calculate an estimate.</p></noscript><p class="image-note">All itineraries and prices are fictional examples. Photographs are archival regional context and do not show these packages operating.</p></section>
-<section id="calculator" class="calculator-section"><div class="container calculator-grid"><div><p class="eyebrow light">PLAN YOUR GROUP</p><h2>A little planning.<br>A clearer <em>picture.</em></h2><p>Choose a tour and tell us how many people are coming. Your estimate uses the sample price per person.</p><p class="small-note">Sample estimate only. No availability check, reservation, payment, or real quotation is made.</p></div><form id="calculator-form" class="calculator-card" novalidate><h3>Group price estimate</h3><label for="calc-tour">Choose a tour</label><select id="calc-tour" required></select><label for="calc-people">Number of people</label><input id="calc-people" type="number" min="1" max="20" step="1" value="1" required aria-describedby="calc-hint calc-error"><p id="calc-hint" class="field-hint">Enter a whole number from 1 to 20.</p><p id="calc-error" class="field-error" role="status"></p><button class="button" type="submit">Calculate estimate <span aria-hidden="true">↗</span></button><div class="estimate-result" aria-live="polite"><p>Estimated group total</p><output id="estimate-total">Select a tour</output><p id="estimate-breakdown"></p></div><a id="estimate-enquiry" class="text-link" href="contact.html">Prepare an enquiry <span aria-hidden="true">↗</span></a></form></div></section>
-</main>
-<footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M4 35 20 10l10 16 5-8 9 17" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="m16 35 8-12 8 12M8 41h32" stroke="currentColor" stroke-width="2.5"/><circle cx="37" cy="9" r="3" fill="currentColor"/></svg><span>MOROBE TRAILS<small>PAPUA NEW GUINEA</small></span></a><p>From the forest to the coast.<br>A little curiosity goes a long way.</p></div><div><h2>Explore</h2><a href="tours.html">Find a tour</a><a href="about.html">Our story</a><a href="gallery.html">Photo journal &amp; credits</a></div><div><h2>Start a conversation</h2><p>Lae, Morobe Province<br>Papua New Guinea</p><a href="contact.html">Prepare an enquiry <span aria-hidden="true">↗</span></a></div></div><div class="container footer-bottom"><p>© 2026 Morobe Trails PNG. Web Design project by Desmon Beibi.</p><p>Imaginary company. Sample tours and prices. No bookings or payments.</p></div></footer>
-</body></html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore the fictional tour concepts of Morobe Trails PNG, a Lae-based tourism company created for a Web Design project.">
+    <title>
+      Explore tours | Morobe Trails PNG
+    </title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/tours.js">
+    </script>
+    <script defer src="assets/js/core.js">
+    </script>
+    <script defer src="assets/js/main.js">
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Morobe Trails PNG home">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path d="M4 35 20 10l10 16 5-8 9 17" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="m16 35 8-12 8 12M8 41h32" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="37" cy="9" r="3" fill="currentColor"/>
+          </svg>
+          <span>
+            MOROBE TRAILS
+            <small>
+              PAPUA NEW GUINEA
+            </small>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>
+          Menu
+          <span aria-hidden="true">
+            ☰
+          </span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="index.html">
+            Home
+          </a>
+          <a href="about.html">
+            About
+          </a>
+          <a href="tours.html" aria-current="page">
+            Tours
+          </a>
+          <a href="gallery.html">
+            Gallery
+          </a>
+          <a href="contact.html">
+            Contact
+          </a>
+          <a class="button small nav-cta" href="contact.html">
+            Plan your journey
+            <span aria-hidden="true">
+              ↗
+            </span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-intro container">
+        <p class="eyebrow">
+          FIND YOUR PATH
+        </p>
+        <h1>
+          Less rushing.
+          <br>
+          More
+          <em>
+            discovering.
+          </em>
+        </h1>
+        <p class="lead">
+          Six sample journeys through nature, culture, and coast. Choose a direction, compare the details, and make it your own.
+        </p>
+      </section>
+      <section class="container tour-section" aria-labelledby="tours-heading">
+        <div class="tour-toolbar">
+          <h2 id="tours-heading" class="sr-only">
+            Sample tour packages
+          </h2>
+          <div class="filter-buttons" role="group" aria-label="Filter tours by category">
+            <button type="button" data-category="All" aria-pressed="true">
+              All tours
+            </button>
+            <button type="button" data-category="Nature" aria-pressed="false">
+              Nature
+            </button>
+            <button type="button" data-category="Culture" aria-pressed="false">
+              Culture
+            </button>
+            <button type="button" data-category="Coast" aria-pressed="false">
+              Coast
+            </button>
+          </div>
+          <div class="search-field">
+            <label class="sr-only" for="tour-search">
+              Search tours
+            </label>
+            <input id="tour-search" type="search" placeholder="Search a tour" maxlength="100">
+          </div>
+        </div>
+        <p id="tour-count" class="muted" role="status">
+        </p>
+        <div id="tour-list" class="tour-grid">
+        </div>
+        <p id="no-tours" class="empty-state" hidden>
+          No tours match your search. Try another word or select All tours.
+        </p>
+        <noscript>
+          <p>
+            Enable JavaScript to display the tour packages, filter them, and calculate an estimate.
+          </p>
+        </noscript>
+        <p class="image-note">
+          All itineraries and prices are fictional examples. Photographs are archival regional context and do not show these packages operating.
+        </p>
+      </section>
+      <section id="calculator" class="calculator-section">
+        <div class="container calculator-grid">
+          <div>
+            <p class="eyebrow light">
+              PLAN YOUR GROUP
+            </p>
+            <h2>
+              A little planning.
+              <br>
+              A clearer
+              <em>
+                picture.
+              </em>
+            </h2>
+            <p>
+              Choose a tour and tell us how many people are coming. Your estimate uses the sample price per person.
+            </p>
+            <p class="small-note">
+              Sample estimate only. No availability check, reservation, payment, or real quotation is made.
+            </p>
+          </div>
+          <form id="calculator-form" class="calculator-card" novalidate>
+            <h3>
+              Group price estimate
+            </h3>
+            <label for="calc-tour">
+              Choose a tour
+            </label>
+            <select id="calc-tour" required>
+            </select>
+            <label for="calc-people">
+              Number of people
+            </label>
+            <input id="calc-people" type="number" min="1" max="20" step="1" value="1" required aria-describedby="calc-hint calc-error">
+            <p id="calc-hint" class="field-hint">
+              Enter a whole number from 1 to 20.
+            </p>
+            <p id="calc-error" class="field-error" role="status">
+            </p>
+            <button class="button" type="submit">
+              Calculate estimate
+              <span aria-hidden="true">
+                ↗
+              </span>
+            </button>
+            <div class="estimate-result" aria-live="polite">
+              <p>
+                Estimated group total
+              </p>
+              <output id="estimate-total">
+                Select a tour
+              </output>
+              <p id="estimate-breakdown">
+              </p>
+            </div>
+            <a id="estimate-enquiry" class="text-link" href="contact.html">
+              Prepare an enquiry
+              <span aria-hidden="true">
+                ↗
+              </span>
+            </a>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M4 35 20 10l10 16 5-8 9 17" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="m16 35 8-12 8 12M8 41h32" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="37" cy="9" r="3" fill="currentColor"/>
+            </svg>
+            <span>
+              MOROBE TRAILS
+              <small>
+                PAPUA NEW GUINEA
+              </small>
+            </span>
+          </a>
+          <p>
+            From the forest to the coast.
+            <br>
+            A little curiosity goes a long way.
+          </p>
+        </div>
+        <div>
+          <h2>
+            Explore
+          </h2>
+          <a href="tours.html">
+            Find a tour
+          </a>
+          <a href="about.html">
+            Our story
+          </a>
+          <a href="gallery.html">
+            Photo journal &amp; credits
+          </a>
+        </div>
+        <div>
+          <h2>
+            Start a conversation
+          </h2>
+          <p>
+            Lae, Morobe Province
+            <br>
+            Papua New Guinea
+          </p>
+          <a href="contact.html">
+            Prepare an enquiry
+            <span aria-hidden="true">
+              ↗
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>
+          © 2026 Morobe Trails PNG. Web Design project by Desmon Beibi.
+        </p>
+        <p>
+          Imaginary company. Sample tours and prices. No bookings or payments.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

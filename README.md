@@ -8,7 +8,7 @@ Help PNG residents and international visitors explore six sample tours, compare 
 
 ## Website and repository
 
-- Website address: https://dbeibi1.github.io/morobe-trails-png/
+- Published website (verified 9 October 2026): https://dbeibi1.github.io/morobe-trails-png/
 - Repository: https://github.com/dbeibi1/morobe-trails-png
 
 ## Pages
@@ -69,4 +69,4 @@ The separate submission package contains calculation and validation results, sou
 
 See [ASSET_CREDITS.md](ASSET_CREDITS.md) and the [gallery](gallery.html#credits) for authors, dates, source links, licences, and changes. Five photographs are historical Sherwin Carlquist images. The Lae city panorama is by Phenss, cropped by Dr. Blofeld. Image licences apply to the original images and their derivatives separately from the website code.
 
-The website does not store or send personal information. The email action opens an installed email application with the recipient left blank. The visitor must add a recipient and send the message themselves. Clipboard access may be unavailable; the website then selects the draft for manual copying. Historical images provide context and do not show current conditions or actual tours.
+The website does not store or send personal information. The email action opens an installed email application with the recipient left blank. The visitor must add a recipient and send the message themselves. Clipboard access may be unavailable or delayed; the website then selects the draft for manual copying. Historical images provide context and do not show current conditions or actual tours.
